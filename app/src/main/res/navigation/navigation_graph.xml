@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/categoryFragment">
+
+
+    <action
+        android:id="@+id/actionToCategory"
+        app:destination="@id/categoryFragment"
+        app:popUpToInclusive="false" />
+
+    <action
+        android:id="@+id/actionToCart"
+        app:destination="@id/cartFragment" />
+
+    <fragment
+        android:id="@+id/categoryFragment"
+        android:name="com.gile.beautysaloon.ui.category.CategoryFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_category">
+        <action
+            android:id="@+id/action_categoryFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/employeesFragment"
+        android:name="com.gile.beautysaloon.ui.employees.EmployeesFragment"
+        android:label="fragment_feedback"
+        tools:layout="@layout/fragment_employees" />
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.gile.beautysaloon.ui.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+
+
+</navigation>

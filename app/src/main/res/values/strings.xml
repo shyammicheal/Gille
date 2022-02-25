@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gile Beauty Saloon</string>
+    <string name="gile_beauty_salon">GILE BEAUTY SALON</string>
+    <string name="services">Services</string>
+    <string name="cart">Cart</string>
+    <string name="no_result_found">No patients found</string>
+    <string name="add_service_to_cart">Add service to cart</string>
+    <string name="please_select_the_employee_s_for_this_service_you_can_select_multiple_employees">Please select the employee(s) for this service. You can select multiple employees.</string>
+    <string name="added_service_to_cart">Added service to cart</string>
+    <string name="cart_is_empty">Cart is empty</string>
+    <string name="no_service_found">No service found</string>
+</resources>
